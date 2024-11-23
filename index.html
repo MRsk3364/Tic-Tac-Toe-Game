@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <!-- Top-Left Restart Button -->
+    <div id="topRestartBtn">
+        <img src=https://i.ibb.co/V3XDNpV/pngegg.png alt="Restart Game">
+    </div>
+
+    <!-- Difficulty Popup -->
+    <div id="popup">
+        <h1>Select Difficulty</h1>
+        <button class="difficultyBtn" data-difficulty="easy">Easy</button>
+        <button class="difficultyBtn" data-difficulty="medium">Medium</button>
+        <button class="difficultyBtn" data-difficulty="hard">Hard</button>
+    </div>
+
+    <!-- Game Board -->
+    <div id="gameBoard">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+
+    <!-- Result Popup -->
+    <div id="resultPopup" class="hidden">
+        <h1></h1>
+        <button id="popupRestartBtn">Restart</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

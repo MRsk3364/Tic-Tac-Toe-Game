@@ -1,0 +1,138 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4e54c8, #8e44ad);
+    position: relative;
+}
+
+/* Top-Left Restart Button */
+#topRestartBtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#topRestartBtn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+#topRestartBtn img:hover {
+    transform: scale(1.1);
+}
+
+/* Difficulty Popup */
+#popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffcc80;
+    color: #3e2723;
+    padding: 60px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    font-size: 32px;
+    z-index: 10;
+}
+
+.difficultyBtn {
+    padding: 20px 40px;
+    margin: 15px;
+    background-color: #00796b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 24px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.difficultyBtn:hover {
+    background-color: #004d40;
+    transform: scale(1.1);
+}
+
+/* Game Board */
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(3, 180px);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 180px;
+    height: 180px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Result Popup */
+.hidden {
+    display: none;
+}
+
+#resultPopup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffcc80;
+    color: #3e2723;
+    padding: 60px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    font-size: 32px;
+    z-index: 10;
+}
+
+#popupRestartBtn {
+    margin-top: 20px;
+    padding: 20px 40px;
+    background-color: #00796b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 24px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#popupRestartBtn:hover {
+    background-color: #004d40;
+    transform: scale(1.1);
+}
